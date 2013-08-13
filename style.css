@@ -1,0 +1,289 @@
+/*
+	99Lime.com HTML KickStart by Joshua Gatcke
+	style.css
+	
+*/
+
+/*---------------------------------
+	IMPORTS
+-----------------------------------*/
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700);
+
+/*---------------------------------
+	OVERRIDES
+-----------------------------------*/
+h1,h2,h3,h4,h5,h6{
+font-family: "Roboto Condensed", arial, verdana, sans-serif;
+font-weight:normal;
+}
+
+thead th,
+tbody th{
+font-family: "Roboto Condensed", arial, verdana, sans-serif;
+}
+
+button,
+a.btn,
+input[type="submit"],
+input[type="reset"],
+input[type="button"]{
+font-family: "Roboto Condensed", arial, verdana, sans-serif;
+}
+
+.menu{
+font-family: "Roboto Condensed", arial, verdana, sans-serif;
+}
+
+blockquote{
+font-family: "Roboto Condensed", arial, verdana, sans-serif;
+}
+
+/*---------------------------------
+	LAYOUT
+-----------------------------------*/
+body{
+margin:0;
+padding:0 0 0 0;
+color:#000;
+background:#efefef url(css/img/gray_jean.png);
+font:normal 0.9em/150% 'Roboto Condensed', arial, verdana, sans-serif;
+text-shadow: 0px 0px 1px transparent; /* google font pixelation fix */
+}
+
+#wrap{
+width:100%;
+background:#fff;
+margin:30px auto 30px auto;
+padding:0 2%;
+border:1px solid #ccc;
+}
+
+header{
+	background: #ffed3e; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffed3e 0%, #fbce1a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffed3e), color-stop(100%,#fbce1a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffed3e 0%,#fbce1a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffed3e 0%,#fbce1a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffed3e 0%,#fbce1a 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffed3e 0%,#fbce1a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffed3e', endColorstr='#fbce1a',GradientType=0 ); /* IE6-9 */
+	float: left;
+	height: 200px;
+	width: 990px;
+	}
+header #header-top {
+	background:url(images/bg-pattern.png) no-repeat;
+	float:left;
+	width: 990px;}
+header #header-logo{ 
+	float:left;
+	width: 50%;}
+header #header-search{
+	float:left;
+	width:50%;
+}
+
+#footer{
+text-align:center;
+padding:20px;
+margin:0;
+border-top:1px solid #ddd;
+color:#999;
+font-size:0.8em;
+text-shadow:0px 1px 1px #fff;
+position: relative;
+top:0;
+left:0;
+background:#fff;
+}
+
+	#link-top{
+	display:none;
+	}
+	
+/* NAV BAR*/
+.navbar{
+/*position:fixed;*/
+top:0;
+left:0;
+width: 990px;
+background:#000;
+color:#fff;
+z-index:1000;
+}
+
+	.navbar #logo{
+	position:absolute;
+	top:0;
+	right:0;
+	padding:0.5em 1em;
+	font-size: 1.7em;
+	color:#efefef;
+	text-decoration:none;
+	}
+	
+	.navbar span{
+	color:#86dc00;
+	}
+	
+	
+	.navbar ul{
+	display:inline-block;
+	margin:0;
+	padding:0;
+	}
+	
+		.navbar li{
+		margin:0;
+		padding:0;
+		list-style-type:0;
+		display:inline-block;
+		}
+		
+		.navbar li a{
+		display:inline-block;
+		color:#efefef;
+		padding:1em 1.3em;
+		text-decoration:none;
+		text-transform: uppercase;
+		line-height:100%;
+		font-size: 1.2em;
+		}
+		
+/*---------------------------------
+	MENU STYLES
+	EDIT BELOW THIS LINE TO CUSTOMIZE
+-----------------------------------*/
+.menu{
+border:1px solid #ccc;
+background: #f89e01; 
+}
+
+	.menu li{}
+	
+		.menu li a{
+		text-shadow:0px 1px 1px #fff;
+		padding:15px 20px;
+		text-decoration:none;
+		font-size:0.9em;
+		color: #462d00;
+		}
+		
+		.menu li.current>a,
+		.menu li.current>a:hover,
+		.menu li.current.hover>a{
+		background: #462d00; /* Old browsers */
+		
+		color:#f89e01;
+		text-shadow:0px -1px 0px rgba(0,0,0,0.2);
+		cursor: default;
+		}
+		
+		.menu li a:hover,
+		.menu li.hover>a{
+		background:#f5f5f5;
+		}
+		
+	/* sub menus */
+	.menu ul{
+	background: #efefef;
+	border:1px solid #ccc;
+	}
+	
+	.menu ul li{}
+	.menu ul li a{}
+	
+		/* sub-sub menus */
+		.menu ul ul{}
+		.menu ul ul li{}
+		.menu ul ul li a{}
+		
+	/* arrows */
+	/* arrow down */  .menu li.has-menu span.arrow{border-color-top:#ccc;border-color:#ccc transparent transparent transparent;}
+	/* arrow left */  .menu li li.has-menu span.arrow, .menu.vertical li.has-menu span.arrow
+					   {border-color-left:#ccc;border-color:transparent transparent transparent #ccc;}
+	/* arrow right */ .menu.vertical.right li.has-menu span.arrow{border-color-right:#ccc;border-color:transparent #ccc transparent transparent;}
+	
+	/* dividers */ 	  .menu ul li.divider{border-top:1px solid #ccc;}
+					  .menu ul li.divider a{border-top:1px solid #fff;}
+
+.menu-2{
+border:1px solid #ccc;
+background: #f89e01; 
+}
+
+	.menu-2 li{}
+	
+		.menu-2 li a{
+		text-shadow:0px 1px 1px #fff;
+		padding:15px 20px;
+		text-decoration:none;
+		font-size:0.9em;
+		color: #462d00;
+		}
+		
+		.menu-2 li.current>a,
+		.menu-2 li.current>a:hover,
+		.menu-2 li.current.hover>a{
+		background: #462d00; /* Old browsers */
+		
+		color:#f89e01;
+		text-shadow:0px -1px 0px rgba(0,0,0,0.2);
+		cursor: default;
+		}
+		
+		.menu-2 li a:hover,
+		.menu-2 li.hover>a{
+		background:#f5f5f5;
+		}
+		
+	/* sub menus */
+	.menu-2 ul{
+	background: #efefef;
+	border:1px solid #ccc;
+	}
+	
+	.menu-2 ul li{}
+	.menu-2 ul li a{}
+	
+		/* sub-sub menus */
+		.menu-2 ul ul{}
+		.menu-2 ul ul li{}
+		.menu-2 ul ul li a{}
+		
+	/* arrows */
+	/* arrow down */  .menu-2 li.has-menu span.arrow{border-color-top:#ccc;border-color:#ccc transparent transparent transparent;}
+	/* arrow left */  .menu-2 li li.has-menu span.arrow, .menu-2.vertical li.has-menu span.arrow
+					   {border-color-left:#ccc;border-color:transparent transparent transparent #ccc;}
+	/* arrow right */ .menu-2.vertical.right li.has-menu span.arrow{border-color-right:#ccc;border-color:transparent #ccc transparent transparent;}
+	
+	/* dividers */ 	  .menu-2 ul li.divider{border-top:1px solid #ccc;}
+					  .menu-2 ul li.divider a{border-top:1px solid #fff;}
+
+.callout{
+background:#4598ef;/*#86dc00;*/
+padding:3em 0;
+color:#fff;
+box-shadow:inset 0px 0px 10px rgba(0,0,0,0.2);
+text-align: center;
+text-shadow:0px 1px 3px rgba(0,0,0,0.2);
+display:block;
+}
+	.callout + div.grid{margin-top:50px;}
+	 a.callout{cursor:pointer;}
+	 .callout i.icon-4x{font-size:6em;}
+	 .callout h4{margin-bottom:30px;}
+	 .callout-top{margin:50px 0 0 0;}
+	 .callout p{margin-bottom:0;}
+	 .callout .button{margin-top:10px;}
+	 .callout.green{background:#19ad0b;/*#86dc00;*/}
+	 
+#mc_embed_signup{
+padding:30px 0;
+}
+
+#ui-preview{
+border:5px solid #ddd;
+margin:30px 0;
+display:block;
+}
