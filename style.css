@@ -91,6 +91,7 @@ footer {
 	float:left;
 	width:990px;
 	height:200px;
+	border-top: 5px solid #6f92c5;
 	background: #008fd4; /* Old browsers */
 	background: -moz-linear-gradient(top,  #008fd4 0%, #8531e9 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#008fd4), color-stop(100%,#8531e9)); /* Chrome,Safari4+ */
@@ -339,6 +340,7 @@ display:block;
 	float: left;;
 	width: 990px;
 	background-color: #fff;
+	border-bottom: 5px solid #6f92c5;
 }
 
 #wrap #row_2 .col_6 {
@@ -384,4 +386,12 @@ display:block;
 }
 #wrap a {
 	text-decoration: none;
+}
+#navbar-footer ul a{
+	color: #fff;
+	background: #1b67d8;
+}
+##navbar-footer ul .current li a{
+	color: #fff;
+	background: #0d3269;
 }
