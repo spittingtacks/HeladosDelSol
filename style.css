@@ -125,9 +125,11 @@ float:left;
 background: #f89e01;
 color:#fff;
 z-index:1000;
-padding:0 2.5em 0 0;
 }
-
+header .navbar {
+	border-top:5px solid #f8bc55;
+	padding-left:4em;
+}
 	.navbar #logo{
 	position:absolute;
 	top:0;
@@ -170,9 +172,8 @@ padding:0 2.5em 0 0;
 	EDIT BELOW THIS LINE TO CUSTOMIZE
 -----------------------------------*/
 .menu{
-background: #f89e01; 
+background: #f89e01;
 }
-
 	.menu li{}
 	
 		.menu li a{
@@ -302,9 +303,11 @@ margin:30px 0;
 display:block;
 }
 #wrap #top-gradient {
+	border-top:5px solid #f8bc55;
 	float:left;
 	width:990px;
 	height:40px;
+	margin-top: 29px;
 	background: #fbce1a; /* Old browsers */
 	background: -moz-linear-gradient(top,  #fbce1a 0%, #ffffff 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbce1a), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
@@ -325,9 +328,9 @@ display:block;
 	max-width: 500px;
 }
 
-#wrap #row_1 h1,h2,h3 {
+#wrap #row_1 ul li h1,h2,h3 {
 	float:left;
-	color:#1b67d8;
+	/*color:#1b67d8;*/
 	width:440px;
 }
 
@@ -351,6 +354,14 @@ display:block;
 	padding: 1em;
 	min-height: 390px;
 }
+
+#wrap h1 i{
+	color: #ccc;
+	padding-right:.3em;
+}
+#wrap #row_1 h2{
+	padding-top: .4em;
+}
 #wrap #bottom-gradient {
 	float:left;
 	width:990px;
@@ -371,10 +382,30 @@ display:block;
 	color: #1b67d8;
 	padding-left: .4em;
 }
-#facebook-info a{
-	background-color:fff;
-
+#header-search {
+	margin-top: 2em;
 }
+
+#facebook-info i{
+	background-color:#fff;
+	padding: 1px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 3px solid #fff;
+	box-shadow: 0px 3px 3px 0px #bbb;
+	}
+
+#search-field{
+	background-color:#fff;
+	padding: 5px 8px 8px 2px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 3px solid #fff;
+	box-shadow: 0px 3px 3px 0px #bbb;
+	}
+
 #wrap  p{
 	margin-left: .6em;
 }
@@ -391,7 +422,19 @@ display:block;
 	color: #fff;
 	background: #1b67d8;
 }
-##navbar-footer ul .current li a{
+#navbar-footer .current ul li a {
 	color: #fff;
 	background: #0d3269;
 }
+#navbar-footer ul .current li a:hover{
+	color: #0d3269;
+	background: #fff;
+}
+#navbar-footer .navbar .menu, #navbar-footer .navbar{
+	background: #1b67d8;
+}
+header label{
+	padding:5px;
+}
+
+
