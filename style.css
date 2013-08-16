@@ -492,5 +492,7 @@ address p{
 	font-style: normal;
 	margin-left: .5em;
 }
-
+#row_2 .col_5{
+	padding-left: 2.5em;
+}
 
