@@ -250,6 +250,13 @@ footer #footer-bottom {
 	height: 180px;
 	background:url('http://www.renderingfactroy/com/hds-test/images/bg-pattern.png') no-repeat;
 }
+<<<<<<< HEAD
 .navbar a i{
     margin-right:1em;}
 }
+=======
+#row_2 .col_5{
+	padding-left: 2.5em;
+}
+
+>>>>>>> parent of 4ac48e6... Revert "Added products page"
