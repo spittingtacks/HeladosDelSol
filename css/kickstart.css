@@ -495,3 +495,51 @@ clear:both;
 		text-decoration:none;
 		font-size:0.8em;
 		}
+/* NAV BAR*/
+.navbar{
+	width: 990px;
+	float:left;
+	background: #f89e01;
+	z-index:1000;
+	padding-left:4em;
+	border-top: 5px solid #f8bc55;
+	border-bottom: 5px solid #f8bc55;
+}
+
+	.navbar #logo{
+	position:absolute;
+	top:0;
+	right:0;
+	padding:0.5em 1em;
+	font-size: 1.7em;
+	color:#efefef;
+	text-decoration:none;
+	}
+	
+	.navbar span{
+	color:#86dc00;
+	}
+	
+	
+	.navbar ul{
+	display:inline-block;
+	margin:0;
+	padding:0;
+	}
+	
+		.navbar li{
+		margin:0;
+		padding:0;
+		list-style-type:0;
+		display:inline-block;
+		}
+		
+		.navbar li a{
+		display:inline-block;
+		color: #462d00;
+		padding:1em 1.3em;
+		text-decoration:none;
+		line-height:100%;
+		font-size: .9em;
+		}
+
